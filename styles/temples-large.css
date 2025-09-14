@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 0;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
