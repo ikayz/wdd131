@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zambia</title>
+  <meta name="description" content="Country profile and weather for Zambia.">
+  <meta name="author" content="Isaac Miti">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Zambia</h1>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/zambia-large.webp" media="(min-width: 900px)">
+        <img src="images/zambia.webp" alt="Zambia landscape" width="100%" height="auto">
+      </picture>
+      <div class="overlay data-card">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 752,612 sq km</li>
+          <li><strong>Population:</strong> 19,473,125</li>
+          <li><strong>Capital:</strong> Lusaka</li>
+          <li><strong>Languages:</strong> English, Bemba, Nyanja, Tonga, Lozi, and others</li>
+          <li><strong>Currency:</strong> Zambian Kwacha</li>
+          <li><strong>Time Zone:</strong> UTC+2</li>
+          <li><strong>Calling Code:</strong> +260</li>
+          <li><strong>Internet TLD:</strong> .zm</li>
+        </ul>
+      </div>
+      <div class="overlay weather-card">
+        <h2>Weather <span class="weather-icon" aria-label="partly cloudy"></span></h2>
+        <ul>
+          <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
+          <li><strong>Conditions:</strong> Partly Cloudy</li>
+          <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Isaac Miti, Zambia.</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
