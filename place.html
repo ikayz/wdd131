@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zambia</title>
+  <title>WDD | Zambia</title>
   <meta name="description" content="Country profile and weather for Zambia.">
   <meta name="author" content="Isaac Miti">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
@@ -35,7 +38,9 @@
         </ul>
       </div>
       <div class="overlay weather-card">
-        <h2>Weather <span class="weather-icon"></span></h2>
+        <h2>Weather <span class="weather-icon">
+            <img src="images/weather_icon.svg" alt="Weather condition icon" width="24" height="24">
+          </span></h2>
         <ul>
           <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
           <li><strong>Conditions:</strong> Partly Cloudy</li>

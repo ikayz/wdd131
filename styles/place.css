@@ -73,21 +73,16 @@ main {
 }
 
 .weather-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  display: inline-flex;
+  align-items: center;
   vertical-align: middle;
+  margin-left: 0.5em;
 }
 
-@media (min-width: 600px) {
-  .weather-icon {
-    background: none;
-  }
-  .weather-icon::after {
-    content: '⛅';
-    font-size: 1.5em;
-    margin-left: 0.2em;
-  }
+.weather-icon img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* Responsive Design */
@@ -189,17 +184,6 @@ main {
     box-sizing: border-box;
     text-align: center;
     color: #fff;
-  }
-
-  .weather-icon {
-    background: url('../images/weather_icon.svg') no-repeat center/contain;
-    width: 1.5em;
-    height: 1.5em;
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .weather-icon::after {
-    content: '';
   }
 }
 
