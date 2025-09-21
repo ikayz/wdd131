@@ -35,15 +35,6 @@ main {
 .hero {
   position: relative;
   width: 100%;
-  :root {
-    --primary: #198a00;
-    --secondary: #ff6700;
-    --card-bg: rgba(255, 255, 255, 0.92);
-    --shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-    --text-dark: #222;
-    --text-light: #fff;
-  }
-  width: 100%;
   display: block;
   border-radius: 0;
 }
