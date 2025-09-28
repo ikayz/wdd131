@@ -1,0 +1,14 @@
+/* Large screen specific styles */
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .temple-card figcaption {
+    padding: 2rem;
+  }
+}
