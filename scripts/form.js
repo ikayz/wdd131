@@ -1,19 +1,38 @@
 // Product array
 const products = [
-  { id: 1, name: 'Smart Thermostat' },
-  { id: 2, name: 'Solar Panel System' },
-  { id: 3, name: 'Home Security Camera' },
-  { id: 4, name: 'Robot Vacuum Cleaner' },
-  { id: 5, name: 'Air Purifier' },
+  {
+    id: 'fc-1888',
+    name: 'flux capacitor',
+    averagerating: 4.5,
+  },
+  {
+    id: 'fc-2050',
+    name: 'power laces',
+    averagerating: 4.7,
+  },
+  {
+    id: 'fs-1987',
+    name: 'time circuits',
+    averagerating: 3.5,
+  },
+  {
+    id: 'ac-2000',
+    name: 'low voltage reactor',
+    averagerating: 3.9,
+  },
+  {
+    id: 'jj-1969',
+    name: 'warp equalizer',
+    averagerating: 5.0,
+  },
 ];
 
 // Populate product select options
 function populateProducts() {
   const selectElement = document.getElementById('product');
-
   products.forEach(product => {
     const option = document.createElement('option');
-    option.value = product.name;
+    option.value = product.id;
     option.textContent = product.name;
     selectElement.appendChild(option);
   });
