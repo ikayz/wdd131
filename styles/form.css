@@ -29,11 +29,13 @@ main {
   padding: 0 1rem;
 }
 
-form {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+body {
+  font-family: 'Roboto', 'Montserrat', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .form-group {
@@ -44,6 +46,16 @@ label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+}
+/* Use Montserrat for headings and labels */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
 }
 
 input[type='text'],
