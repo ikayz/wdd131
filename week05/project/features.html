@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BudgetNest — Features</title>
+  <meta name="author" content="Isaac Miti">
+  <meta name="description"
+    content="Features of BudgetNest: budgeting, expense tracking, and savings goals with privacy-first design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">BudgetNest</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="features.html" class="active">Features</a>
+        <a href="how.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <img class="feature-icon" src="images/feature-budget.svg" alt="Budgeting icon" loading="lazy">
+        <div class="feature-body">
+          <h4>Budgeting</h4>
+          <p>Create monthly budgets, set category limits, and get alerts when you’re close to your limits. Set a weekly
+            grocery cap, split bills across roommates, or try a 30-day spending freeze — BudgetNest gives you the tools
+            to plan better.</p>
+          <ul>
+            <li>Quick-start templates for common budgets</li>
+            <li>Rolling balances so unused amounts carry forward</li>
+            <li>Notifications when a category reaches 80%</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img class="feature-icon" src="images/feature-expenses.svg" alt="Expense tracking icon" loading="lazy">
+        <div class="feature-body">
+          <h4>Expense Tracking</h4>
+          <p>Automatically categorize transactions and visualize spending trends. Know where each kwacha goes.</p>
+          <p class="muted">Examples: filter by merchant, compare month-over-month categories, and export CSV for
+            deeper analysis.</p>
+          <ul>
+            <li>Smart rules to auto-assign subscriptions and recurring payments</li>
+            <li>Manual edit option when categorization needs correction</li>
+            <li>Search and tag transactions for reporting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-card">
+        <img class="feature-icon" src="images/feature-savings.svg" alt="Savings goals icon" loading="lazy">
+        <div class="feature-body">
+          <h4>Savings Goals</h4>
+          <p>Set goals, allocate funds, and monitor your progress with simple charts and reminders</p>
+          <ul>
+            <li>Create multiple goals (emergency, travel, gadgets)</li>
+            <li>Auto-contribute a percentage of leftover budget to a goal</li>
+            <li>Projected completion date based on contribution rate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="integration container">
+      <h3>Integrations & Privacy</h3>
+      <p>BudgetNest supports manual transaction entry and (optionally) secure read-only connections to bank accounts
+        via industry-standard aggregators. Your data remains private: we never sell your transaction data and provide
+        clear export options so you can control your information.</p>
+      <ul>
+        <li>Manual import via CSV</li>
+        <li>Read-only bank connections (where available)</li>
+        <li>Export and delete your data at any time</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentyear"></span> Isaac Miti, Zambia.</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/lazyload.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

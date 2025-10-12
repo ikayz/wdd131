@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BudgetNest — Home</title>
+  <meta name="author" content="Isaac Miti">
+  <meta name="description"
+    content="BudgetNest — simple budgeting, expense tracking, and savings goals to help you manage money with clarity.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">BudgetNest</h1>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Take control of your money with BudgetNest 🐣</h2>
+        <p>BudgetNest helps you track expenses, set savings goals, and build healthy money habits — all in one tidy
+          place. Track spending, plan budgets, and watch your savings grow.</p>
+        <ul class="hero-benefits">
+          <li><strong>Simple budgets:</strong> Create monthly budgets in minutes with sensible default categories.</li>
+          <li><strong>Automatic categorization:</strong> Transactions are grouped for you so you can spot patterns fast.
+          </li>
+          <li><strong>Goal-driven saving:</strong> Allocate money to short- and long-term goals and track progress
+            visually.</li>
+        </ul>
+        <a class="cta" href="features.html">See Features</a>
+      </div>
+      <div class="hero-right">
+        <img src="images/hero-budget.svg" alt="BudgetNest illustration" loading="lazy">
+      </div>
+    </section>
+
+    <section class="features-preview container">
+      <h3>Key features</h3>
+      <div id="features-list" class="features-grid">
+        <!-- Feature cards populated by scripts/main.js -->
+      </div>
+      <p class="muted">Each feature is designed to work together — budgets are informed by your expense trends, while
+        savings goals get small, automatic contributions when you hit spending targets.</p>
+    </section>
+
+    <section class="use-cases container">
+      <h3>How people use BudgetNest</h3>
+      <div class="use-case-grid">
+        <div class="use-case">
+          <h4>Monthly budgeting</h4>
+          <p>Set limits for groceries, transport, and entertainment. Get alerted when you're near the limit so you can
+            adjust mid-month.</p>
+        </div>
+        <div class="use-case">
+          <h4>One-off goals</h4>
+          <p>Save for a phone, trip, or emergency fund with incremental contributions and a clear progress bar.</p>
+        </div>
+        <div class="use-case">
+          <h4>Expense reviews</h4>
+          <p>Run quick reports for the month to see subscriptions, dining out, and transport spend — identify easy cuts
+            and reallocate to savings.</p>
+        </div>
+      </div>
+      <div class="container">
+        <p id="visitCount" class="muted">Visits: 0</p>
+      </div>
+    </section>
+
+    <section class="how-preview container">
+      <h3>How it works</h3>
+      <ol>
+        <li>Sign up and connect your accounts</li>
+        <li>Create budgets and savings goals</li>
+        <li>Track spending and reach your targets</li>
+      </ol>
+      <a href="how.html" class="secondary">Learn More</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentyear"></span> Isaac Miti, Zambia.</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/lazyload.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/getdates.js"></script>
+</body>
+
+</html>

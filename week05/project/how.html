@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BudgetNest — How It Works</title>
+  <meta name="author" content="Isaac Miti">
+  <meta name="description"
+    content="Step-by-step onboarding for BudgetNest: connect accounts, import transactions, set budgets and goals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">BudgetNest</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how.html" class="active">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>How It Works</h2>
+    <p>Getting started is simple — BudgetNest walks you through each step with helpful prompts and clear visual
+      feedback. Below is a recommended 10–15 minute setup to get value quickly.</p>
+
+    <ol>
+      <li>
+        <strong>Create an account</strong> — choose an email and password. Optionally connect your bank using a
+        read-only
+        connector (secure and encrypted). If you prefer, skip bank linking and enter transactions manually.
+      </li>
+      <li>
+        <strong>Import or add transactions</strong> — connect to your account or import a CSV. BudgetNest will suggest
+        categories for each transaction. Review a few and correct as needed so the system learns your preferences.
+      </li>
+      <li>
+        <strong>Set budgets and goals</strong> — start with high-level categories (Housing, Food, Transport). Try a
+        small
+        savings goal first (e.g., 10% of income) to see quick progress.
+      </li>
+      <li>
+        <strong>Use insights</strong> — Weekly summaries highlight where you spent most, recurring charges, and
+        suggestions like “Cut dine-out by 15% to meet your goal sooner.” Apply suggestions or adjust budgets directly.
+      </li>
+      <li>
+        <strong>Iterate</strong> — budgets are not set-and-forget. Review monthly, adjust categories, and let the app
+        reallocate leftover amounts to savings automatically.
+      </li>
+    </ol>
+
+    <h3>Tips for success</h3>
+    <ul>
+      <li>Start small: pick one category to actively manage this month.</li>
+      <li>Use rules to auto-categorize recurring transactions (subscriptions, rent).</li>
+      <li>Schedule a 10-minute weekly review to keep budgets realistic.</li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="currentyear"></span> Isaac Miti, Zambia.</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/lazyload.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
